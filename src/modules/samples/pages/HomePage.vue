@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import Title from '@/shared/components/Title.vue';
+
+
+
+
+</script>
+
 <template>
-    <h1>Home Page</h1>
+    <Title text="Dashboard" sub="Bem-Vindo ao painel de controle"></Title>
 </template>
