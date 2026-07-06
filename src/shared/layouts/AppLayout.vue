@@ -1,11 +1,16 @@
 <script setup lang="ts">
-import Header from '../components/Header.vue';
-import Menu from '../components/Menu.vue';
+    import { useAuthStore } from '@/modules/auth/stores/auth.ts';
+    import Header from '../components/Header.vue';
+    import Menu from '../components/Menu.vue';
+    import Loading from '../components/Loading.vue';
+
+    const authStore = useAuthStore()
 
 </script>
 
 <template>
-    <div class="flex flex-col min-h-screen ">
+    <Loading v-if="authStore.isLoading"/>
+    <div v-else class="flex flex-col min-h-screen ">
         <Header/>
         <div class="flex flex-1">
             <aside class="w-64 bg-zinc-900 border-r border-zinc-800 p-4">
