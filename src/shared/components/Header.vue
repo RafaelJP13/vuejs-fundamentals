@@ -1,8 +1,16 @@
 <script setup lang="ts">
 import { useAuthStore } from '@/modules/auth/stores/auth';
-
+import { useRouter } from 'vue-router';
 
     const authStore = useAuthStore()
+    const router = useRouter()
+
+    const handleLogout = async () => {
+
+        await authStore.logout()
+        router.push({name:"Auth"})
+
+    }
 
 </script>
 
@@ -14,7 +22,7 @@ import { useAuthStore } from '@/modules/auth/stores/auth';
                 <span class="text-sm font-bold text-zinc-400">{{ authStore.user?.name }}</span>
                 <span class="text-xs text-zinc-500">{{ authStore.user?.email }}</span>
             </div>
-            <button class="btn btn-danger" @click="authStore.logout()">Sair</button>
+            <button class="btn btn-danger" @click="handleLogout()">Sair</button>
         </div>
     </header>
 </template>
