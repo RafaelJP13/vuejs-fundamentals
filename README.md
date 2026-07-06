@@ -1,42 +1,68 @@
 # Vue.js Fundamentals
 
-This template should help get you started developing with Vue 3 in Vite.
+A practical project created to learn and practice the core concepts of **Vue.js 3** using the Composition API and the modern Vue ecosystem.
 
-## Recommended IDE Setup
+The project demonstrates how to build scalable Vue applications with routing, state management, reusable components, and a clean folder structure.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Technologies
 
-## Recommended Browser Setup
+- Vue.js 3
+- TypeScript
+- Vite
+- Vue Router
+- Pinia
+- Tailwind CSS 4
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 📚 Topics Covered
 
-## Type Support for `.vue` Imports in TS
+- Vue 3 fundamentals
+- Composition API
+- Reactive state (`ref` and `reactive`)
+- Computed properties
+- Components and Props
+- Events (`emit`)
+- Conditional rendering
+- List rendering
+- Routing with Vue Router
+- State management with Pinia
+- Reusable layouts and components
+- Project organization
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 📁 Project Structure
 
-## Customize configuration
+```text
+src/
+├── app/
+│   ├── router/
+│   └── App.vue
+├── modules/
+│   ├── auth/
+│   └── samples/
+├── shared/
+│   ├── components/
+│   └── layouts/
+```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ⚙️ Getting Started
 
-## Project Setup
+Clone the repository:
 
-```sh
+```bash
+git clone https://github.com/RafaelJP13/vuejs-fundamentals.git
+```
+
+Install dependencies:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Run the development server:
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## 🎯 Purpose
 
-```sh
-npm run build
-```
+This repository serves as a personal learning playground for exploring Vue.js best practices and strengthening frontend development skills through hands-on examples.
