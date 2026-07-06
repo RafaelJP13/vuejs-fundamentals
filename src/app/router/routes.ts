@@ -7,6 +7,7 @@ import type { RouteRecordRaw } from "vue-router";
 
 export const routes: RouteRecordRaw[] = [
     {
+        name: "Auth",
         path: "/auth",
         component: AuthPage
     },
@@ -14,16 +15,22 @@ export const routes: RouteRecordRaw[] = [
     {
         path: '/',
         component: AppLayout,
+        meta: {
+            requiresAuth: true
+        },
         children: [
             {
+                name: "Home",
                 path: "",
                 component: HomePage,
             },
             {
+                name: "Counter",
                 path: "counter",
                 component: CounterPage
             },
             {
+                name: "CounterPinia",
                 path: "counter/pinia",
                 component: CounterPiniaPage
             }
